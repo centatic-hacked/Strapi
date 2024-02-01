@@ -1,0 +1,52 @@
+{
+  "kind": "collectionType",
+  "collectionName": "products",
+  "info": {
+    "singularName": "product",
+    "pluralName": "products",
+    "displayName": "Product",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "Description": {
+      "type": "text",
+      "required": true
+    },
+    "Pros": {
+      "displayName": "Normal List",
+      "type": "component",
+      "repeatable": true,
+      "component": "lists.normal-list",
+      "required": true
+    },
+    "Cons": {
+      "type": "component",
+      "repeatable": true,
+      "component": "lists.normal-list",
+      "required": true
+    },
+    "AffiliateLink": {
+      "type": "string",
+      "required": true,
+      "regex": "https?:\\/\\/(www\\.)?[-a-zA-Z0-9@:%._\\+~#=]{1,256}\\.[a-zA-Z0-9()]{1,6}\\b([-a-zA-Z0-9()@:%_\\+.~#?&//=]*)"
+    },
+    "ImageFormat": {
+      "type": "dynamiczone",
+      "components": [
+        "image-format.image",
+        "image-format.image-link"
+      ],
+      "required": true,
+      "max": 1
+    }
+  }
+}

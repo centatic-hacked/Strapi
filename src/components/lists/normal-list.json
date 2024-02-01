@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_lists_normal_lists",
+  "info": {
+    "displayName": "Normal List",
+    "icon": "bulletList"
+  },
+  "options": {},
+  "attributes": {
+    "Con": {
+      "type": "string"
+    }
+  }
+}
