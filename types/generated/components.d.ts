@@ -32,7 +32,7 @@ export interface ListsNormalList extends Schema.Component {
     description: '';
   };
   attributes: {
-    ListItem: Attribute.String & Attribute.Unique;
+    ListItem: Attribute.Text & Attribute.Unique;
   };
 }
 
