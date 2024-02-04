@@ -39,14 +39,17 @@
       "required": true,
       "regex": "https?:\\/\\/(www\\.)?[-a-zA-Z0-9@:%._\\+~#=]{1,256}\\.[a-zA-Z0-9()]{1,6}\\b([-a-zA-Z0-9()@:%_\\+.~#?&//=]*)"
     },
-    "ImageFormat": {
-      "type": "dynamiczone",
-      "components": [
-        "image-format.image",
-        "image-format.image-link"
+    "AltImageText": {
+      "type": "string",
+      "required": true
+    },
+    "Image": {
+      "allowedTypes": [
+        "images"
       ],
-      "required": true,
-      "max": 1
+      "type": "media",
+      "multiple": false,
+      "required": true
     }
   }
 }
