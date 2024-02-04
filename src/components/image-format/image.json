@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_image_format_images",
+  "info": {
+    "displayName": "Image",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "AltText": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

@@ -798,8 +798,15 @@ export interface ApiProductProduct extends Schema.CollectionType {
     Pros: Attribute.Component<'lists.normal-list', true> & Attribute.Required;
     Cons: Attribute.Component<'lists.normal-list', true> & Attribute.Required;
     AffiliateLink: Attribute.String & Attribute.Required;
-    AltImageText: Attribute.String & Attribute.Required;
-    Image: Attribute.Media & Attribute.Required;
+    Image: Attribute.DynamicZone<
+      ['image-format.image-link', 'image-format.image']
+    > &
+      Attribute.SetMinMax<
+        {
+          max: 1;
+        },
+        number
+      >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
