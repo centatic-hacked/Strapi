@@ -29,9 +29,10 @@ export interface ListsNormalList extends Schema.Component {
   info: {
     displayName: 'Normal List';
     icon: 'bulletList';
+    description: '';
   };
   attributes: {
-    Con: Attribute.String;
+    ListItem: Attribute.String & Attribute.Unique;
   };
 }
 

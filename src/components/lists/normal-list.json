@@ -2,12 +2,14 @@
   "collectionName": "components_lists_normal_lists",
   "info": {
     "displayName": "Normal List",
-    "icon": "bulletList"
+    "icon": "bulletList",
+    "description": ""
   },
   "options": {},
   "attributes": {
-    "Con": {
-      "type": "string"
+    "ListItem": {
+      "type": "string",
+      "unique": true
     }
   }
 }
