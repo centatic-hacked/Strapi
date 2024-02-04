@@ -9,7 +9,7 @@
   "attributes": {
     "ListItem": {
       "type": "text",
-      "unique": true
+      "unique": false
     }
   }
 }
