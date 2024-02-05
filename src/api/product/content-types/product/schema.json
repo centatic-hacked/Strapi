@@ -46,6 +46,11 @@
         "image-format.image"
       ],
       "max": 1
+    },
+    "Price": {
+      "type": "decimal",
+      "required": true,
+      "min": 0
     }
   }
 }
