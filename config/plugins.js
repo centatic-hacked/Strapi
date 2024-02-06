@@ -18,4 +18,12 @@ module.exports = ({ env }) => ({
       },
     },
   },
+  meilisearch: {
+    config: {
+      // Your meili host
+      host: "https://meilisearch-production-a533.up.railway.app/",
+      // Your master key or private key
+      apiKey: "J16jgaTyio2OqwbYWQ6AL1Cm60axKCJI",
+    },
+  },
 });
