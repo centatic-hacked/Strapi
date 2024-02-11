@@ -56,6 +56,11 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::product-category.product-category"
+    },
+    "Slug": {
+      "type": "uid",
+      "targetField": "Title",
+      "required": true
     }
   }
 }
