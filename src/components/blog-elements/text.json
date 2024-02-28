@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_blog_elements_texts",
+  "info": {
+    "displayName": "Text",
+    "icon": "message",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Text": {
+      "type": "customField",
+      "options": {
+        "preset": "toolbar"
+      },
+      "required": true,
+      "customField": "plugin::ckeditor5.CKEditor"
+    }
+  }
+}

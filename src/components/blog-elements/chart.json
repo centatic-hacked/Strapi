@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_blog_elements_charts",
+  "info": {
+    "displayName": "Chart",
+    "icon": "chartCircle",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "chart": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::chart.chart"
+    }
+  }
+}

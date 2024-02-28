@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_charts_bar_and_doughnut_and_pie_charts",
+  "info": {
+    "displayName": "Bar & Doughnut & Pie Chart",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "borderRadius": {
+      "type": "decimal"
+    },
+    "hoverBorderRadius": {
+      "type": "decimal"
+    },
+    "BackgroundColor": {
+      "type": "component",
+      "repeatable": true,
+      "component": "lists.color-list",
+      "required": true,
+      "min": 1
+    }
+  }
+}

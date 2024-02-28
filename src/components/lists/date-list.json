@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_lists_date_lists",
+  "info": {
+    "displayName": "Date List",
+    "icon": "calendar",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "DateType": {
+      "type": "enumeration",
+      "enum": [
+        "weekDay",
+        "monthDay",
+        "month",
+        "year"
+      ],
+      "required": true
+    },
+    "StartDate": {
+      "type": "biginteger",
+      "required": true,
+      "min": "0"
+    },
+    "EndDate": {
+      "type": "biginteger",
+      "required": true,
+      "min": "1"
+    }
+  }
+}

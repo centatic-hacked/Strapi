@@ -1,0 +1,75 @@
+{
+  "kind": "collectionType",
+  "collectionName": "charts",
+  "info": {
+    "singularName": "chart",
+    "pluralName": "charts",
+    "displayName": "Chart",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "labels": {
+      "type": "dynamiczone",
+      "components": [
+        "lists.date-list",
+        "lists.normal-list"
+      ]
+    },
+    "xAxisTitle": {
+      "type": "string"
+    },
+    "yAxisTitle": {
+      "type": "string"
+    },
+    "dataSourceTitle": {
+      "type": "string",
+      "required": true
+    },
+    "data": {
+      "type": "component",
+      "repeatable": true,
+      "component": "lists.number-list",
+      "required": true
+    },
+    "borderWidth": {
+      "type": "decimal",
+      "min": 0
+    },
+    "borderColor": {
+      "type": "customField",
+      "regex": "^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$",
+      "required": false,
+      "customField": "plugin::color-picker.color"
+    },
+    "hoverBorderWidth": {
+      "type": "decimal"
+    },
+    "hoverBorderColor": {
+      "type": "customField",
+      "regex": "^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$",
+      "customField": "plugin::color-picker.color"
+    },
+    "ChartType": {
+      "type": "dynamiczone",
+      "components": [
+        "charts.bar-and-doughnut-and-pie-chart",
+        "charts.line-radar-chart"
+      ],
+      "required": true,
+      "min": 0,
+      "max": 1
+    }
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "collectionName": "components_charts_line_radar_charts",
+  "info": {
+    "displayName": "Line & Radar Chart",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Fill": {
+      "type": "boolean",
+      "required": true
+    },
+    "BackgroundColor": {
+      "type": "customField",
+      "regex": "^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$",
+      "customField": "plugin::color-picker.color"
+    },
+    "Tension": {
+      "type": "decimal",
+      "required": true,
+      "min": 0
+    },
+    "PointStyle": {
+      "type": "enumeration",
+      "enum": [
+        "circle",
+        "cross",
+        "crossRot",
+        "dash",
+        "line",
+        "rect",
+        "rectRounded",
+        "rectRot",
+        "star",
+        "triangle"
+      ]
+    },
+    "pointBackgroundColor": {
+      "type": "customField",
+      "regex": "^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$",
+      "customField": "plugin::color-picker.color"
+    },
+    "pointBorderColor": {
+      "type": "customField",
+      "regex": "^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$",
+      "customField": "plugin::color-picker.color"
+    },
+    "pointBorderWidth": {
+      "type": "integer"
+    },
+    "pointRadius": {
+      "type": "decimal"
+    },
+    "hoverBackgroundColor": {
+      "type": "customField",
+      "regex": "^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$",
+      "customField": "plugin::color-picker.color"
+    },
+    "pointHoverBackroundColor": {
+      "type": "customField",
+      "regex": "^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$",
+      "customField": "plugin::color-picker.color"
+    },
+    "pointHoverBackgroundColor": {
+      "type": "customField",
+      "regex": "^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$",
+      "customField": "plugin::color-picker.color"
+    },
+    "pointHoverBorderColor": {
+      "type": "customField",
+      "regex": "^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$",
+      "customField": "plugin::color-picker.color"
+    },
+    "pointHoverBorderWidth": {
+      "type": "decimal"
+    },
+    "pointHoverRadius": {
+      "type": "decimal"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_lists_number_lists",
+  "info": {
+    "displayName": "Number List"
+  },
+  "options": {},
+  "attributes": {
+    "Number": {
+      "type": "biginteger",
+      "required": true
+    }
+  }
+}
